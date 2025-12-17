@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply inline-block px-8 py-3 rounded-full font-medium border-2 border-secondary bg-secondary text-primary transition-all duration-300 hover:bg-transparent hover:text-secondary;
+    }
+
+    .btn-secondary {
+        @apply inline-block px-8 py-3 rounded-full font-medium border-2 border-text-light bg-transparent text-text-light ml-4 transition-all duration-300 hover:bg-text-light hover:text-primary;
+    }
+
+    .btn-primary.small {
+        @apply px-6 py-2 text-sm;
+    }
+
+    .section {
+        @apply py-24;
+    }
+
+    .section-title {
+        @apply text-4xl mb-4 relative inline-block font-heading text-primary;
+    }
+
+    .section-subtitle {
+        @apply text-lg text-secondary uppercase tracking-[2px] font-semibold;
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-br from-secondary to-[#fcd34d] bg-clip-text text-transparent;
+    }
+
+    .input-field {
+        @apply w-full p-4 border border-slate-200 rounded-lg font-body transition-all duration-300 bg-slate-50 focus:outline-none focus:border-secondary focus:bg-white;
+    }
+
+    /* Keep Animations here for simplicity or move to config */
+    .fade-in-up {
+        animation: fadeInUp 0.8s ease forwards;
+        opacity: 0;
+    }
+
+    .delay-1 {
+        animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Swiper Overrides if needed */
+.swiper-pagination-bullet-active {
+    background: var(--secondary-color) !important;
+}
