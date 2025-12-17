@@ -33,19 +33,19 @@ const About = () => {
                     <div className="grid grid-cols-2 gap-8">
                         <div className="stat-card bg-bg-off-white p-8 rounded-2xl text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                             <span className="block text-4xl font-bold text-primary font-heading">
-                                {inView ? <CountUp end={100} duration={2.5} /> : '0'}+
+                                {inView ? <CountUp end={100} duration={1.5} /> : '0'}+
                             </span>
                             <span className="text-text-gray text-sm">Гүйцэтгэсэн Төсөл</span>
                         </div>
                         <div className="stat-card bg-bg-off-white p-8 rounded-2xl text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                             <span className="block text-4xl font-bold text-primary font-heading">
-                                {inView ? <CountUp end={50} duration={2.5} /> : '0'}+
+                                {inView ? <CountUp end={50} duration={10} /> : '0'}+
                             </span>
                             <span className="text-text-gray text-sm">Сэтгэл Ханамжтай Харилцагч</span>
                         </div>
                         <div className="stat-card bg-bg-off-white p-8 rounded-2xl text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md col-span-2 md:col-span-1 md:col-start-1 md:col-end-3 lg:col-auto">
                             <span className="block text-4xl font-bold text-primary font-heading">
-                                {inView ? <CountUp end={8} duration={2.5} /> : '0'}
+                                {inView ? <CountUp end={8} duration={10} /> : '0'}
                             </span>
                             <span className="text-text-gray text-sm">Жилийн Туршлага</span>
                         </div>
